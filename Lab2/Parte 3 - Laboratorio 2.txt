@@ -1,0 +1,262 @@
+;
+; Laboratorio2.asm
+;
+; Created: 15/9/2026 10:07:47
+; Author : chiar
+;
+
+.include "m328pdef.inc"
+
+; Empiezo con los vectores de interrupción
+.ORG 0x0000
+	jmp		start		;dirección de comienzo (vector de reset)
+
+;PARTE 2:
+;ii)
+.ORG 0x0008
+	jmp		_pcint1_int	;salto atención a rutina de interrupción de botones en Puerto C
+; -----------------------------
+
+.ORG 0x001C
+	jmp		_tmr0_int	;salto atención a rutina de comparación A del timer 0
+
+
+; ---------------------------------------------------------------------------------------
+; acá empieza el programa
+start:
+; configuro los puertos:
+    ldi     r16,    0b00111100  ; PB2, PB3, PB4 y PB5 configurados como SALIDAS (1)
+    out     DDRB,   r16         ; 4 LEDs del shield son salidas
+    ldi     r16,    0b00111100  ; Ponemos los pines en 1 para apagar los LEDs (se prenden con 0)
+    out     PORTB,  r16         ; apago los LEDs
+
+    ldi     r16,    0b00000000
+    out     DDRC,   r16         ; 3 botones del shield son entradas
+
+;PARTE 2:
+;ii)
+    ldi     r16,    0b00001110  ; Habilito Pull-ups internas en PC1, PC2 y PC3
+    out     PORTC,  r16
+; -----------------------------
+
+;-------------------------------------------------------------------------------------
+
+;Configuro el TMR0 y su interrupcion.
+	ldi		r16,	0b00000010
+	out		TCCR0A,	r16			;configuro para que cuente hasta OCR0A y vuelve a cero (reset on compare), ahí dispara la interrupción
+	ldi		r16,	0b00000101
+	out		TCCR0B,	r16			;prescaler = 1024
+	ldi		r16,	124
+	out		OCR0A,	r16			;comparo con 125
+	ldi		r16,	0b00000010
+	sts		TIMSK0,	r16			;habilito la interrupción (falta habilitar global)
+
+;PARTE 2:
+;ii)
+; Configuro la interrupción por cambio de pin (PCINT1 para Puerto C)
+	ldi		r16,	0b00000010	; Habilito el grupo PCIE1 (Puerto C)
+	sts		PCICR,	r16
+	ldi		r16,	0b00001110	; Habilito la máscara para PC1, PC2 y PC3
+	sts		PCMSK1,	r16
+
+;-------------------------------------------------------------------------------------
+;Inicializo algunos registros que voy a usar como variables.
+;	ldi		r24,	0x00		;inicializo r24 para un contador genérico
+
+;Inicializo registros que voy a usar como variables:
+	clr		r24					; r24: contador de interrupciones (0 a 125)
+	clr		r25					; r25: contador de segundos transcurridos
+
+;PARTE 3:
+	clr		r17					; r17: Bandera del Cronómetro (0 = Pausado / Detenido, 1 = Corriendo)
+
+;-------------------------------------------------------------------------------------
+
+;Programa principal ... acá puedo hacer lo que quiero
+;comienzo:
+;	sei							;habilito las interrupciones globales(set interrupt flag)
+;
+;loop1:
+;	nop
+;	nop
+;	nop
+;	nop
+;	ori r16, 0xFF
+;	nop
+;	nop
+;	nop
+;	brne	loop1
+;loop2:
+;	nop
+;	nop
+;	nop
+;fin:
+;	rjmp loop2
+
+;LED QUE PARPADEA:
+;iii)
+comienzo:
+	sei							; Habilito las interrupciones globales
+
+loop1:
+	; Revisamos si pasaron 30 segundos
+	cpi		r25,	30			; ¿r25 llegó a 30 segundos?
+	brlo	no_pasaron_30		; Si r25 < 30, salta
+
+	cbi		PORTB,	3			; Si pasaron 30s, prende el LED D3 (PB3 en 0)
+
+no_pasaron_30:
+	ori 	r16, 	0xFF
+	brne	loop1
+
+loop2:
+	nop
+fin:
+	rjmp 	loop2
+
+;RUTINAS
+;-------------------------------------------------------------------------------------
+
+; ------------------------------------------------
+; Rutina de atención a la interrupción del Timer0.
+; ------------------------------------------------
+; recordar que el timer 0 fue configurado para interrumpir cada 125 ciclos (5^3), y tiene un prescaler 1024 = 2^10.
+; El reloj de I/O está configurado @ Fclk = 16.000.000 Hz = 2^10*5^6; entonces voy a interrumpir 125 veces por segundo
+; esto sale de dividir Fclk por el prescaler y el valor de OCR0A.
+;
+; Esta rutina por ahora no hace casi nada, Ud puede ir agregando funcionalidades.
+; Por ahora solo: cambia el valor de un LED en la placa, e incrementa un contador en r24.
+
+;PARTE 1:
+;_tmr0_int:
+;		push	r16			; Guardo r16 en la pila.
+;		in		r16,	SREG	; Leo el registro de estado SREG.
+;		push	r16			; Guardo el SREG original en la pila.
+;
+;		sbi		PINB,	2	; Toggle LED.
+;		inc		r24			; Incremento r24 (modifica banderas de SREG).
+;
+;		pop		r16			; Recupero el SREG de la pila.
+;		out		SREG,	r16	; Restauro el SREG original del programa principal.
+;		pop		r16			; Restauro r16.
+;		reti				; Retorno de la interrupción.
+
+;LED QUE PARPADEA.
+;i)
+; Parpadeo a 1 Hz.
+;_tmr0_int:
+;		push	r16			; Guardo r16 en la pila
+;		in		r16,	SREG	; Leo el registro de estado SREG
+;		push	r16			; Guardo SREG en la pila
+;
+;		inc		r24			; Incremento el contador de interrupciones
+;		cpi		r24,	62	; ¿Llegamos a 62 interrupciones (~0.5 s)?
+;		brne	_tmr0_out	; Si no llegó, salto al final sin cambiar el LED
+;
+;		sbi		PINB,	2	; Toggle LED (cambia de estado)
+;		clr		r24			; Reinicio el contador r24 a 0
+;
+;_tmr0_out:
+;		pop		r16			; Recupero SREG de la pila
+;		out		SREG,	r16	; Restauro SREG
+;		pop		r16			; Restauro r16
+;		reti				; Retorno de la interrupción
+
+;LED QUE PARPADEA.
+;iii)
+;_tmr0_int:
+;		push	r16				; Guardo r16 en la pila
+;		in		r16,	SREG	; Leo el registro de estado SREG
+;		push	r16				; Guardo SREG en la pila
+;
+;		inc		r24				; Incremento contador de interrupciones
+;		cpi		r24,	125		; ¿Llegamos a 125 interrupciones (1 segundo exactamente)?
+;		brne	_tmr0_out		; Si no llegó a 1s, salgo de la rutina
+;
+;		clr		r24				; Reinicio contador de interrupciones
+;		inc		r25				; Incremento segunds(r25 aumenta en 1)
+;		sbi		PINB,	2		; Toggle LED D4 (PB2) cada 1 segundo
+;
+;_tmr0_out:
+;		pop		r16				; Restauro SREG
+;		out		SREG,	r16
+;		pop		r16				; Restauro r16
+;		reti					; Retorno de la interrupción
+
+
+;PARTE 3:
+_tmr0_int:
+		push	r16				; Guardo r16 en la pila
+		in		r16,	SREG	; Leo el registro de estado SREG
+		push	r16				; Guardo SREG en la pila
+
+		; Si el cronómetro no está corriendo (r17 = 0), no incrementamos la cuenta
+		tst		r17
+		breq	_tmr0_out
+
+		inc		r24				; Incremento contador de interrupciones
+		cpi		r24,	125		; ¿Llegamos a 125 interrupciones (1 segundo exactamente)?
+		brne	_tmr0_out		; Si no llegó a 1s, salgo de la rutina
+
+		clr		r24				; Reinicio contador de interrupciones
+		inc		r25				; Incremento segundos (r25 aumenta en 1)
+		sbi		PINB,	2		; Toggle LED D4 (PB2) indicando que el contador avanza
+
+_tmr0_out:
+		pop		r16				; Restauro SREG
+		out		SREG,	r16
+		pop		r16				; Restauro r16
+		reti					; Retorno de la interrupción
+
+
+; PARTE 2:
+;ii)
+;_pcint1_int:
+;		push	r16				; Guardo r16 en la pila
+;		in		r16,	SREG	; Leo el registro de estado SREG
+;		push	r16				; Guardo SREG en la pila
+;
+;		in		r16,	PINC	; LECTURA OBLIGATORIA: Lee PINC para actualizar el estado del puerto
+;
+;		sbi		PINB,	4		; Toggle LED D2 (PB4)
+;		sbi		PINB,	3		; Toggle LED D3 (PB3) por si acaso
+;
+;		pop		r16				; Restauro SREG
+;		out		SREG,	r16
+;		pop		r16				; Restauro r16
+;		reti					; Retorno de la interrupción
+
+
+;PARTE 3:
+_pcint1_int:
+		push	r16				; Guardo r16 en la pila
+		in		r16,	SREG	; Leo el registro de estado SREG
+		push	r16				; Guardo SREG en la pila
+
+		in		r16,	PINC	; Lectura obligatoria de PINC para limpiar la condición de cambio
+
+		; Chequeo Botón S1-A1 (PC1) -> Start / Pause
+		sbis	PINC,	1		; Si PC1 está presionado (en 0), salta la instrucción siguiente
+		rjmp	_chk_s2
+	
+		; Si presionaron S1: Alterno el estado de marcha/pausa (r17)
+		ldi		r16,	1
+		eor		r17,	r16		; Inverte bit 0 de r17 (0 -> 1 / 1 -> 0)
+		sbi		PINB,	4		; Toggle LED D2 (PB4) para indicar visualmente la pulsación
+
+_chk_s2:
+		; Chequeo Botón S2-A2 (PC2) -> Reset
+		sbis	PINC,	2		; Si PC2 está presionado (en 0), salta la instrucción siguiente
+		rjmp	_pcint1_exit
+
+		; Si presionaron S2: Reseteo contador y detengo la marcha
+		clr		r17				; Pauso la marcha
+		clr		r25				; Reinicio segundos a 0
+		clr		r24				; Reinicio sub-contador a 0
+		sbi		PORTB,	3		; Apago LED D3 (PB3 = 1) por si estaba encendido tras los 30s
+
+_pcint1_exit:
+		pop		r16				; Restauro SREG
+		out		SREG,	r16
+		pop		r16				; Restauro r16
+		reti					; Retorno de la interrupción

@@ -1,0 +1,36 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Users\chiar\OneDrive\Escritorio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Users\chiar\OneDrive\Escritorio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Users\chiar\OneDrive\Escritorio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\Debug\Lab2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab2.map</FILE>
+  <FILE>Lab2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</FILE><LINE>18</LINE></start>
+  <_pcint1_int><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</FILE><LINE>129</LINE></_pcint1_int>
+  <_tmr0_int><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</FILE><LINE>98</LINE></_tmr0_int>
+  <comienzo><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</FILE><LINE>53</LINE></comienzo>
+  <loop1><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</FILE><LINE>56</LINE></loop1>
+  <no_pasaron_30><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</FILE><LINE>87</LINE></no_pasaron_30>
+  <fin_chk_30><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</FILE><LINE>90</LINE></fin_chk_30>
+  <_tmr0_out><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</FILE><LINE>120</LINE></_tmr0_out>
+  <_chk_s2><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</FILE><LINE>145</LINE></_chk_s2>
+  <_pcint1_exit><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab2\Lab2\main.asm</FILE><LINE>155</LINE></_pcint1_exit>
+ </LABELS>
+</ASSEMBLER_INFO>
