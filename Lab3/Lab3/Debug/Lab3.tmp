@@ -1,0 +1,46 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Users\chiar\OneDrive\Escritorio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Users\chiar\OneDrive\Escritorio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Users\chiar\OneDrive\Escritorio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Users\chiar\OneDrive\Escritorio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\Debug\Lab3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab3.map</FILE>
+  <FILE>Lab3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>18</LINE></start>
+  <timer0_ovf_isr><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>207</LINE></timer0_ovf_isr>
+  <apagar><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>63</LINE></apagar>
+  <sacanum_raw><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>334</LINE></sacanum_raw>
+  <main><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>168</LINE></main>
+  <chk_btn_reset><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>182</LINE></chk_btn_reset>
+  <update_buttons><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>198</LINE></update_buttons>
+  <continuar_display><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>251</LINE></continuar_display>
+  <caso_dig1><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>261</LINE></caso_dig1>
+  <caso_dig2><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>267</LINE></caso_dig2>
+  <caso_dig3><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>273</LINE></caso_dig3>
+  <caso_dig4><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>279</LINE></caso_dig4>
+  <fin_isr><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>284</LINE></fin_isr>
+  <sacanum><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>300</LINE></sacanum>
+  <tabla_7seg><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>373</LINE></tabla_7seg>
+  <dato_serie><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>356</LINE></dato_serie>
+  <loop_dato1><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>358</LINE></loop_dato1>
+  <loop_dato2><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>364</LINE></loop_dato2>
+  <loop_dato3><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab3\Lab3\main.asm</FILE><LINE>366</LINE></loop_dato3>
+ </LABELS>
+</ASSEMBLER_INFO>
