@@ -1,0 +1,33 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab1_Final\Lab1_Final\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Users\chiar\OneDrive\Escritorio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Users\chiar\OneDrive\Escritorio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab1_Final\Lab1_Final\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Users\chiar\OneDrive\Escritorio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Users\chiar\OneDrive\Escritorio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab1_Final\Lab1_Final\Debug\Lab1_Final.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab1_Final.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab1_Final.map</FILE>
+  <FILE>Lab1_Final.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <setup><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab1_Final\Lab1_Final\main.asm</FILE><LINE>174</LINE></setup>
+  <start><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab1_Final\Lab1_Final\main.asm</FILE><LINE>179</LINE></start>
+  <retardo_rapido><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab1_Final\Lab1_Final\main.asm</FILE><LINE>218</LINE></retardo_rapido>
+  <loop1><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab1_Final\Lab1_Final\main.asm</FILE><LINE>220</LINE></loop1>
+  <loop2><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab1_Final\Lab1_Final\main.asm</FILE><LINE>222</LINE></loop2>
+  <loop3><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Lab1_Final\Lab1_Final\main.asm</FILE><LINE>224</LINE></loop3>
+ </LABELS>
+</ASSEMBLER_INFO>
