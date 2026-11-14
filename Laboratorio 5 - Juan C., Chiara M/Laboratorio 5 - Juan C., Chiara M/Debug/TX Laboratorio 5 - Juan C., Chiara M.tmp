@@ -1,0 +1,83 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Users\chiar\OneDrive\Escritorio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Users\chiar\OneDrive\Escritorio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Users\chiar\OneDrive\Escritorio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\Debug\TX Laboratorio 5 - Juan C., Chiara M.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>TX Laboratorio 5 - Juan C., Chiara M.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>TX Laboratorio 5 - Juan C., Chiara M.map</FILE>
+  <FILE>TX Laboratorio 5 - Juan C., Chiara M.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <inicio><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>147</LINE></inicio>
+  <int_botones><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>950</LINE></int_botones>
+  <int_timer_display><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>997</LINE></int_timer_display>
+  <mensaje_512><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>136</LINE></mensaje_512>
+  <fin_del_mensaje><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>137</LINE></fin_del_mensaje>
+  <checksum_recibido><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>138</LINE></checksum_recibido>
+  <configurar_placa><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>618</LINE></configurar_placa>
+  <modo_transmisor><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>166</LINE></modo_transmisor>
+  <transmisor_repetir><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>174</LINE></transmisor_repetir>
+  <generar_aleatorios><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>723</LINE></generar_aleatorios>
+  <calcular_checksum><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>297</LINE></calcular_checksum>
+  <transmisor_espera_boton><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>187</LINE></transmisor_espera_boton>
+  <esperar_boton_suelto><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>242</LINE></esperar_boton_suelto>
+  <enviar_mensaje><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>342</LINE></enviar_mensaje>
+  <modo_receptor><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>210</LINE></modo_receptor>
+  <receptor_espera_boton><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>214</LINE></receptor_espera_boton>
+  <recibir_mensaje><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>419</LINE></recibir_mensaje>
+  <verificar_checksum><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>565</LINE></verificar_checksum>
+  <pausa_25ms><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>261</LINE></pausa_25ms>
+  <soltar_esperando><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>246</LINE></soltar_esperando>
+  <pausa_externo><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>265</LINE></pausa_externo>
+  <pausa_medio><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>269</LINE></pausa_medio>
+  <pausa_interno><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>273</LINE></pausa_interno>
+  <checksum_sumar_byte><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>310</LINE></checksum_sumar_byte>
+  <enviar_los_512_bytes><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>356</LINE></enviar_los_512_bytes>
+  <enviar_un_byte><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>401</LINE></enviar_un_byte>
+  <enviar_los_4_del_checksum><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>372</LINE></enviar_los_4_del_checksum>
+  <esperar_fin_envio><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>389</LINE></esperar_fin_envio>
+  <vaciar_receptor><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>432</LINE></vaciar_receptor>
+  <receptor_vacio><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>441</LINE></receptor_vacio>
+  <esperar_primer_byte><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>448</LINE></esperar_primer_byte>
+  <recibir_los_512_bytes><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>457</LINE></recibir_los_512_bytes>
+  <recibir_un_byte><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>516</LINE></recibir_un_byte>
+  <recepcion_fallo_tiempo><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>497</LINE></recepcion_fallo_tiempo>
+  <recibir_los_4_del_checksum><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>481</LINE></recibir_los_4_del_checksum>
+  <esperar_llegada_byte><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>521</LINE></esperar_llegada_byte>
+  <byte_llego><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>538</LINE></byte_llego>
+  <revisar_checksum><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>578</LINE></revisar_checksum>
+  <checksum_distinto><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>606</LINE></checksum_distinto>
+  <aleatorios_nuevo_numero><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>729</LINE></aleatorios_nuevo_numero>
+  <desplazar_izquierda_xor><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>760</LINE></desplazar_izquierda_xor>
+  <desplazar_derecha_xor><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>786</LINE></desplazar_derecha_xor>
+  <izquierda_un_bit><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>768</LINE></izquierda_un_bit>
+  <mezclar_xor><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>808</LINE></mezclar_xor>
+  <derecha_un_bit><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>793</LINE></derecha_un_bit>
+  <mostrar_digito><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>830</LINE></mostrar_digito>
+  <tabla_7segmentos><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>928</LINE></tabla_7segmentos>
+  <enviar_byte_display><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>872</LINE></enviar_byte_display>
+  <display_bit_siguiente><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>878</LINE></display_bit_siguiente>
+  <display_bit_uno><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>900</LINE></display_bit_uno>
+  <display_pulso_reloj><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>906</LINE></display_pulso_reloj>
+  <int_botones_fin><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>970</LINE></int_botones_fin>
+  <timer_probar_digito_2><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>1022</LINE></timer_probar_digito_2>
+  <timer_dibujar><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>1052</LINE></timer_dibujar>
+  <timer_probar_digito_3><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>1032</LINE></timer_probar_digito_3>
+  <timer_digito_4><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>1043</LINE></timer_digito_4>
+  <timer_fin><FILE>C:\Users\chiar\OneDrive\Escritorio\IA y CD\Microprocesadores\Laboratorio 5 - Juan C., Chiara M\Laboratorio 5 - Juan C., Chiara M\main.asm</FILE><LINE>1073</LINE></timer_fin>
+ </LABELS>
+</ASSEMBLER_INFO>
